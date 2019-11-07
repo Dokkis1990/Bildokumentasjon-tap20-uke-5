@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to Tap 20 uke 5’s documentation! &#8212; Tap 20 uke 5 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-tap-20-uke-5-s-documentation">
+<h1>Welcome to Tap 20 uke 5’s documentation!<a class="headerlink" href="#welcome-to-tap-20-uke-5-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="module-Documenting_Practical">
+<span id="car-module"></span><h1>Car Module<a class="headerlink" href="#module-Documenting_Practical" title="Permalink to this headline">¶</a></h1>
+<p>Denne modulen lager en bilbutikk og henter ut informasjonen fra bilfabrikken.</p>
+<dl class="class">
+<dt id="Documenting_Practical.BMW">
+<em class="property">class </em><code class="sig-prename descclassname">Documenting_Practical.</code><code class="sig-name descname">BMW</code><span class="sig-paren">(</span><em class="sig-param">**arg</em><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.BMW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Documenting_Practical.Car" title="Documenting_Practical.Car"><code class="xref py py-class docutils literal notranslate"><span class="pre">Documenting_Practical.Car</span></code></a></p>
+<dl class="method">
+<dt id="Documenting_Practical.BMW.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">**arg</em><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.BMW.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Her lages en BMW klasse som innhenter data fra selve Car klassen.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>arg</strong> (<em>dictionary</em>) – Viser informasjonen om BMW bilen</p></li>
+<li><p><strong>type</strong> (<em>str</em>) – Viser hvilken type bil.</p></li>
+<li><p><strong>doors</strong> (<em>int</em>) – Viser til antall dører som bilen har</p></li>
+<li><p><strong>fuel</strong> (<em>Fuel</em>) – Hvilke drivstoff som bilen bruker.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Documenting_Practical.BMW.__str__">
+<code class="sig-name descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.BMW.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Printer:
+This car is a {s.model}: {s.type}, Wow!
+The car has {s.doors} doors and {s.seets} seets.format(s=self)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Viser en tekst som viser til hvilken biltype og modell + størrelsen på bilen.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Documenting_Practical.BMW.print_model">
+<code class="sig-name descname">print_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.BMW.print_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Printer bilmodellen med hjelp av self.model og self.type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>self</strong> (<a class="reference internal" href="#Documenting_Practical.Car" title="Documenting_Practical.Car"><em>Car</em></a>) – The instance of this object.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Documenting_Practical.BMW.print_space">
+<code class="sig-name descname">print_space</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.BMW.print_space" title="Permalink to this definition">¶</a></dt>
+<dd><p>Her printes størrelsen på bilen. Med hjelp av self.doors og self.seets vises antall dører og seter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>self</strong> (<a class="reference internal" href="#Documenting_Practical.Car" title="Documenting_Practical.Car"><em>Car</em></a>) – The instance of this object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Documenting_Practical.Car">
+<em class="property">class </em><code class="sig-prename descclassname">Documenting_Practical.</code><code class="sig-name descname">Car</code><a class="headerlink" href="#Documenting_Practical.Car" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Dette er bil klassen. Alle biltypene arver fra denne klassen.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>self</strong> (<a class="reference internal" href="#Documenting_Practical.Car" title="Documenting_Practical.Car"><em>Car</em></a>) – The instance of this object</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="Documenting_Practical.Car.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.Car.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dette er selve konstrukteren som bygger bilen.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Documenting_Practical.Car.__str__">
+<code class="sig-name descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.Car.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Printer:
+This car is a {s.model}: {s.type}, Wow!
+The car has {s.doors} doors and {s.seets} seets.format(s=self)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Viser en tekst som viser til hvilken biltype og modell + størrelsen på bilen.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Documenting_Practical.Car.print_model">
+<code class="sig-name descname">print_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.Car.print_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Printer bilmodellen med hjelp av self.model og self.type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>self</strong> (<a class="reference internal" href="#Documenting_Practical.Car" title="Documenting_Practical.Car"><em>Car</em></a>) – The instance of this object.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Documenting_Practical.Car.print_space">
+<code class="sig-name descname">print_space</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.Car.print_space" title="Permalink to this definition">¶</a></dt>
+<dd><p>Her printes størrelsen på bilen. Med hjelp av self.doors og self.seets vises antall dører og seter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>self</strong> (<a class="reference internal" href="#Documenting_Practical.Car" title="Documenting_Practical.Car"><em>Car</em></a>) – The instance of this object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Documenting_Practical.CarFactory">
+<em class="property">class </em><code class="sig-prename descclassname">Documenting_Practical.</code><code class="sig-name descname">CarFactory</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.CarFactory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Her er bilfabrikk klassen som Car klassen henter informasjon fra.</p>
+<dl class="method">
+<dt id="Documenting_Practical.CarFactory.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.CarFactory.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Her spesifisseres det hvilken type bil og hva slags specs den skal ha.
+:param kwargs: Informasjonen om bilene i fabrikken
+:type kwargs: dict</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Documenting_Practical.CarFactory.__str__">
+<code class="sig-name descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.CarFactory.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return str(self).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Documenting_Practical.CarFactory.get_car">
+<code class="sig-name descname">get_car</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.CarFactory.get_car" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Henter ut biltypen</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Documenting_Practical.Lada">
+<em class="property">class </em><code class="sig-prename descclassname">Documenting_Practical.</code><code class="sig-name descname">Lada</code><span class="sig-paren">(</span><em class="sig-param">**arg</em><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.Lada" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Documenting_Practical.Car" title="Documenting_Practical.Car"><code class="xref py py-class docutils literal notranslate"><span class="pre">Documenting_Practical.Car</span></code></a></p>
+<dl class="method">
+<dt id="Documenting_Practical.Lada.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">**arg</em><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.Lada.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dette er selve konstrukteren som bygger bilen.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Documenting_Practical.Lada.__str__">
+<code class="sig-name descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.Lada.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Printer:
+This car is a {s.model}: {s.type}, Wow!
+The car has {s.doors} doors and {s.seets} seets.format(s=self)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Viser en tekst som viser til hvilken biltype og modell + størrelsen på bilen.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Documenting_Practical.Lada.print_model">
+<code class="sig-name descname">print_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.Lada.print_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Printer bilmodellen med hjelp av self.model og self.type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>self</strong> (<a class="reference internal" href="#Documenting_Practical.Car" title="Documenting_Practical.Car"><em>Car</em></a>) – The instance of this object.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Documenting_Practical.Lada.print_space">
+<code class="sig-name descname">print_space</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.Lada.print_space" title="Permalink to this definition">¶</a></dt>
+<dd><p>Her printes størrelsen på bilen. Med hjelp av self.doors og self.seets vises antall dører og seter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>self</strong> (<a class="reference internal" href="#Documenting_Practical.Car" title="Documenting_Practical.Car"><em>Car</em></a>) – The instance of this object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Documenting_Practical.Mercedes">
+<em class="property">class </em><code class="sig-prename descclassname">Documenting_Practical.</code><code class="sig-name descname">Mercedes</code><span class="sig-paren">(</span><em class="sig-param">**arg</em><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.Mercedes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Documenting_Practical.Car" title="Documenting_Practical.Car"><code class="xref py py-class docutils literal notranslate"><span class="pre">Documenting_Practical.Car</span></code></a></p>
+<dl class="method">
+<dt id="Documenting_Practical.Mercedes.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">**arg</em><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.Mercedes.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Her opprettes det en mercedes bil. Underklasse som arver fra Bilklassen.</p>
+<p>type, door, model, og fuel fungerer på samme måte som BMW klassen.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>arg</strong> (<em>dict</em>) – Informasjon om mercedes bilen</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Documenting_Practical.Mercedes.__str__">
+<code class="sig-name descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.Mercedes.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Printer:
+This car is a {s.model}: {s.type}, Wow!
+The car has {s.doors} doors and {s.seets} seets.format(s=self)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Viser en tekst som viser til hvilken biltype og modell + størrelsen på bilen.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Documenting_Practical.Mercedes.print_model">
+<code class="sig-name descname">print_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.Mercedes.print_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Printer bilmodellen med hjelp av self.model og self.type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>self</strong> (<a class="reference internal" href="#Documenting_Practical.Car" title="Documenting_Practical.Car"><em>Car</em></a>) – The instance of this object.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Documenting_Practical.Mercedes.print_space">
+<code class="sig-name descname">print_space</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Documenting_Practical.Mercedes.print_space" title="Permalink to this definition">¶</a></dt>
+<dd><p>Her printes størrelsen på bilen. Med hjelp av self.doors og self.seets vises antall dører og seter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>self</strong> (<a class="reference internal" href="#Documenting_Practical.Car" title="Documenting_Practical.Car"><em>Car</em></a>) – The instance of this object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Tap 20 uke 5</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Ole Eivind Dokkebakke.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
